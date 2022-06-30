@@ -34,8 +34,19 @@
 
 * サイドメニューのコンポーネントの + ボタンを押し表示される Primary や Secondary が「ストーリー」
 * 上部の Docs タブで、各ストーリーの属性に設定できる値やコードを見れる
-* ここまでの package.json、フォルダ構成 ![storybook-1](https://user-images.githubusercontent.com/3456089/176324112-93bb1884-e5e4-464e-8fae-d1a6265e3eaf.png)。storybook 関連のファイルが作成されている(.storybook, src/stories/*)
-* .storybook/main.js に storybook の設定がある。対象ファイルやアドオンの設定等ができる
+* ここまでの package.json、フォルダ構成。storybook 関連のファイルが作成されている(.storybook, src/stories/*)
+  ![storybook-1](https://user-images.githubusercontent.com/3456089/176324112-93bb1884-e5e4-464e-8fae-d1a6265e3eaf.png)
+* storybook の設定ファイルは .storybook/main.js
+  - stories で、対象ファイルの設定。今回は、components 配下で *.stories.jsx のみ自動検知できるように変更した
+  - addons で、アドオンの設定。デフォルトで設定されてる "@storybook/addon-essentials" には[色んな機能](https://storybook.js.
+    org/docs/react/essentials/introduction)が入っている
+* 簡素な Button コンポーネントの作成
+  - Button.jsx, Button.stories.jsx (コンポーネント名+.stories.jsx)、src 内なら同ディレクトリに置かなくても良い
+  - ストーリーは、Component Story Format(CSF) フォーマットで記述
+    - title は、サイドメニューの親グループのタイトル。★★できない？：階層にすると見出しが作れる
+    - 変数名 = ストーリー名
+    - コンポーネントタグ内の内容は、props.children でコンポーネントに渡される
+    - 
 
 ## 参照
 
