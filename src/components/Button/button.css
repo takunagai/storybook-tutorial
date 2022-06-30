@@ -1,0 +1,8 @@
+ button {
+	padding: .25em .5em;
+	font-weight: bold;
+	border-radius: .5em;
+ }
+ .default {
+	 background-color: #eeeeee;
+ }

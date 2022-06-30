@@ -1,11 +1,13 @@
 import React from 'react'
+import './button.css'
 
 type Props = {
     children: React.ReactNode,
+    color: string
 }
 
-function Button({ children }: Props) {
-    return <button>{children}</button>
+function Button({ children, color='default' }: Props) {
+    return <button className={color}>{children}</button>
 }
 
 export default Button
