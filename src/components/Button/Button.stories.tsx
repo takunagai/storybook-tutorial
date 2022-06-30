@@ -1,7 +1,7 @@
 import Button from './Button'
 
 export default {
-    title: 'Button', // サイドメニューの親グループのタイトル
+    title: 'Common/Button', // サイドメニューの親グループのタイトル
     // title: 'Common/Button', // ★★TODO: できない：階層にすると見出しに
     component: Button,
 }
