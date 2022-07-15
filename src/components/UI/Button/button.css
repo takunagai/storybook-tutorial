@@ -6,3 +6,11 @@
  .default {
 	 background-color: #eeeeee;
  }
+
+ .primary {
+	 background-color: #c6d7f6;
+ }
+
+ .secondary {
+	 background-color: #f6c6ee;
+ }

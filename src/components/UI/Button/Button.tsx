@@ -3,7 +3,7 @@ import './button.css'
 
 type Props = {
     children: React.ReactNode,
-    color: string
+    color?: string
 }
 
 function Button({ children, color='default' }: Props) {
